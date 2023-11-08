@@ -77,10 +77,6 @@ if selected_tab == "Home":
     st.plotly_chart(fig)
 
 elif selected_tab == "Perbandingan":
-    import streamlit as st
-    import pandas as pd
-    import matplotlib.pyplot as plt
-
 
     # Fungsi untuk memuat data berdasarkan jenis hewan dan tahun
     def load_data(jenis_hewan, tahun):
