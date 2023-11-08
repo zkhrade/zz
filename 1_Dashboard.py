@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
 
 # Membaca data dari berkas CSV
@@ -78,7 +77,8 @@ if selected_tab == "Home":
     st.plotly_chart(fig)
 
 elif selected_tab == "Perbandingan":
-
+    import matplotlib.pyplot as plt
+    
     # Fungsi untuk memuat data berdasarkan jenis hewan dan tahun
     def load_data(jenis_hewan, tahun):
         file_name = f"{jenis_hewan.lower()}.csv"
